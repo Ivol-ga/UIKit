@@ -12,3 +12,16 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     document.getElementById("email").value = "";
   });
   
+
+  let forms = document.querySelectorAll('form');
+  window.dataLayer = window.dataLayer || [];
+  forms.forEach(form => {
+      form.addEventListener('submit', event => {
+          event.preventDefault();
+          dataLayer.push({
+              'event': 'form_submit',
+              'formId': form.id,
+              'data': Object.fromEntries(new FormData(form))
+          });
+      });
+  });
