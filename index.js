@@ -40,13 +40,13 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     },
     }); */
   
-<script>
+/*   <script>
 
 $(document).ready(function () {
     setTimeout(function() {
         ym(104802823,'reachGoal','time_site');
     }, 15000) // 15 секунд
 });
-</script>
+</script>*/
 
 
