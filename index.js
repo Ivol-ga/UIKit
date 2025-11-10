@@ -21,7 +21,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
           dataLayer.push({
               'event': 'form_submit',
               'formId': form.id,
-              'item': 'item_3-test',
+              'item': 'item_3',
               'data': Object.fromEntries(new FormData(form))
           });
       });
@@ -29,8 +29,8 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
   let buttonTest = document.querySelectorAll('btn__test-new');
   window.dataLayer = window.dataLayer || [];
-  buttonTest.forEach(form => {
-      form.addEventListener('click', event => {
+  buttonTest.forEach(button => {
+      button.addEventListener('click', event => {
           event.preventDefault();
           dataLayer.push({
               'number':'next',
