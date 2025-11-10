@@ -63,5 +63,14 @@
         (window, document, 'script', 'https://abt.s3.yandex.net/expjs/latest/exp.js', 'ymab');
         ymab('metrika.97497263', 'init'/*, {clientFeatures}, {callback}*/);
         </script>
+        <script> 
+            $(window).scroll(function() {
+             if ($(window).scrollTop() >= $(document).height() - $(window).height()) 
+            { yaCounter97497263.reachGoal("ScrollToEnd"); }
+             });
+            </script>
+
+
+
 </body>
 </html>
