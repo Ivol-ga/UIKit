@@ -37,5 +37,26 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
               'item': 'item_1',
               
           });
+          dataLayer.push({
+            "ecommerce":[{
+                "currencyCode":"RUB",
+                "purchase":{
+                    "id":"233529",
+                    "products":
+                    {"id":2,
+                    "name":"МАГНИЙ ХЕЛАТ НЕЙРО 60",
+                    "quantity":1,
+                    "price":1150,
+                    "brand":"Оптисалт",
+                    "category":"Лекарственные препараты и БАД","list":"Оформление заказа",
+                    "position":0
+                }
+            }}
+        ]
+            
+        });
       });
   });
+
+
+  
