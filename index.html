@@ -87,7 +87,7 @@
             </div>
 
             <div class="divider"></div>
-            <div class="ui__title">Review</div>
+            <div class="ui__title" onclick="ym(97497263, 'setUserID', '12345')">Review</div>
             <div class="review">
                 <div class="review__image"></div>
                 <div class="review__text">
@@ -101,7 +101,8 @@
             </div>
 
             <div class="divider"></div>
-            <div class="ui__title">Price</div>
+            <div class="ui__title" onclick="ym(97497263, 'setUserID', '54321')">Price</div>
+
             <div class="price">
                 <h3 class="price__title">Basic</h3>
                 <div class="price__sum">100</div>
@@ -279,5 +280,10 @@
         UserID: 12345
     });
 </script>
+<script type="text/javascript">
+    document.getElementById("buy-button").addEventListener("click", function() {
+    ym(97497263,'reachGoal','zapros_na_rachet');
+    });
+    </script>
     </body>
 </html>
