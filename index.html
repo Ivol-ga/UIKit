@@ -285,5 +285,34 @@
     ym(97497263,'reachGoal','zapros_na_rachet');
     });
     </script>
+  <script>
+(function(){
+    function e(){
+        var a=window.ga&&ga.getAll&&ga.getAll();a=(a=a&&a.length&&a[0])&&a.get&&a.get("clientId")||"";typeof ym!=="undefined"&&a.length>6?(ym(google_tag_manager["rm"]["223519425"](17),"params",{_ga:a}),ym(google_tag_manager["rm"]["223519425"](18),"userParams",{_ga:a})):f<k&&(f++,setTimeout(e,100))
+    }
+    (function(a,g,h,l,b,c,d){
+        a[b]=a[b]||function(){(a[b].a=a[b].a||[]).push(arguments)};a[b].l=1*new Date;c=g.createElement(h);d=g.getElementsByTagName(h)[0];c.async=1;c.src=l;d.parentNode.insertBefore(c,d)
+    })(window,document,"script",
+"https://mc.yandex.ru/metrika/tag.js","ym")
+;ym(google_tag_manager["rm"]["223519425"](19),"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0,ecommerce:"dataLayer"}
+);var f=0,k=10;e()
+})();
+</script>
+<script>
+    let sent = false;
+    
+    function trySend() {
+      if (sent) return;
+      if (typeof ym === 'function') {
+        ym(97497263, 'reachGoal', 'test');
+        sent = true;
+        console.log('ym ЕСТЬ');
+      } else {
+        console.log('ym не определена');
+      }
+    }
+  
+    trySend();
+  </script>
     </body>
 </html>
