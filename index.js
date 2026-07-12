@@ -39,7 +39,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
                     "id":"233529",
                     "products":
                     {"id":2,
-                    "name":"Композиция \\"Ромашковое поле\\",
+                    "name":"Композиция",
                     "quantity":1,
                     "price":1150,
                     "brand":"Оптисалт",
