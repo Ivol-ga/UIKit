@@ -36,8 +36,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
             "ecommerce":[{
                 "currencyCode":"RUB",
                 "add":{
-                    "id":"233529",
-                    "products":
+                   "products":[
                     {"id":2,
                     "name":"Композиция",
                     "quantity":1,
@@ -45,7 +44,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
                     "brand":"Оптисалт",
                     "category":"Лекарственные препараты и БАД","list":"Оформление заказа",
                     "position":0
-                }
+                }]
             }}
         ]
             
