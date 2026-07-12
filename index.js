@@ -33,14 +33,9 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       button.addEventListener('click', event => {
           event.preventDefault();
           dataLayer.push({
-              'number':'next',
-              'item': 'item_1',
-              
-          });
-          dataLayer.push({
             "ecommerce":[{
                 "currencyCode":"RUB",
-                "purchase":{
+                "add":{
                     "id":"233529",
                     "products":
                     {"id":2,
@@ -59,80 +54,3 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   });
 
 
-var payload = {
-ecommerce: {
-currencyCode: "RUB",
-purchase: {
-actionField: {
-id: ORDER_ID,
-revenue: 4505
-},
-products: [
-{
-id: "SU/MRV-SVX/20260531-20260601," + ORDER_ID,
-name: "Минеральные Воды — Екатеринбург",
-price: 4505,
-brand: "SU-Aeroflot",
-category: "Эконом",
-quantity: 1,
-variant: "Минеральные Воды — Екатеринбург/20260531-20260601/1-0-0," + ORDER_ID,
-list: "PromoBlock"
-}
-]
-}
-}
-};
-
- 
-
-
-(function () {
-var COUNTER_ID = 17276998;
-var ORDER_ID = "777777777777";
-
-if (typeof ym !== "function") {
-console.error("Метрика не найдена на странице");
-return;
-}
-
-window.dataLayer = window.dataLayer || [];
-
-var payload = {
-ecommerce: {
-currencyCode: "RUB",
-purchase: {
-actionField: {
-id: ORDER_ID,
-revenue: 4505
-},
-products: [
-{
-id: "SU/MRV-SVX/20260531-20260601," + ORDER_ID,
-name: "Минеральные Воды — Екатеринбург",
-price: 4505,
-brand: "SU-Aeroflot",
-category: "Эконом",
-quantity: 1,
-variant: "Минеральные Воды — Екатеринбург/20260531-20260601/1-0-0," + ORDER_ID,
-list: "PromoBlock"
-}
-]
-}
-}
-};
-
-window.dataLayer.push(payload);
-
-ym(COUNTER_ID, "getClientID", function (clientID) {
-ym(COUNTER_ID, "params", {
-order_id: ORDER_ID,
-order_time: new Date().toISOString(),
-client_id: clientID ||
-});
-
-console.log("purchase отправлен");
-console.log("params отправлены");
-console.log("client_id:", clientID || );
-console.log("payload:", payload);
-});
-})()
